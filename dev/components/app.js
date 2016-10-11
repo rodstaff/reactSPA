@@ -1,6 +1,6 @@
 import React from 'react';
 import {Router, Route, Link, IndexLink, IndexRoute, hashHistory, browserHistory} from 'react-router';
-import Home from './home';
+// import Home from './home';
 
 export default class App extends React.Component {
   render () {
@@ -13,9 +13,7 @@ export default class App extends React.Component {
           <li><Link to="/contact">Contact</Link></li>
         </ul>
         <div className="content">
-        
-          <Home />
-  
+          {this.props.children}
         </div>
       </div>
   	);
